@@ -86,6 +86,34 @@ module K8
     510 => "Not Extended",
   }.each {|_, v| v.freeze }
 
+## HTTP_RESPONSE_STATUS = [	# ? 
+#   [
+#   ],
+#   [
+#     ["Continue", "Switching Protocols", "Processing"]
+#   ],
+#   [
+#     ["OK", "Created", "Accepted", "Non-Authoritative Information",
+#      "No Content", "Reset Content", "Partial Content", "Multi-Status",
+#      "Already Reported"],
+#     [],
+#     [nil, nil, nil, nil, nil, nil, "IM Used"]
+#   ],
+#   [
+#     ["Multiple Choices", "Moved Permanently", "Found", "See Other",
+#      "Not Modified", "Use Proxy", nil, "Temporary Redirect"]
+#   ],
+#   [
+#     ["Bad Request", "Unauthorized", "Payment Required", "Forbidden",
+#      "Not Found", "Method Not Allowed", "Not Acceptable",
+#      "Proxy Authentication Required", "Request Timeout", "Conflict"],
+#     ["Gone", "Length Required", "Precondition Failed", 
+#      "Request Entity Too Large", "Request-URI Too Long",
+#      "Unsupported Media Type", "Requested Range Not Satisfiable",
+#      "Expectation Failed", "I'm a teapot"],
+#     [nil, nil, "Unprocessable Entity", "Locked",
+
+
   MIME_TYPES = {
     '.html'    => 'text/html',
     '.htm'     => 'text/html',
